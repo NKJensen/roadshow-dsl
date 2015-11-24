@@ -6,7 +6,9 @@ set -e
 # Get a repo root
 ROOTDIR=$(git rev-parse --show-toplevel)
 
-if [ ! -e $ROOTDIR/.tmp/jobdsl ]
+echo $ROOTDIR
+
+if [ ! -e '$ROOTDIR/.tmp/jobdsl' ]
 then
   echo "No jobdsl jar file found. Clone job-dsl-plugin and rebuild it"
   mkdir .tmp
