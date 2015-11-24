@@ -8,7 +8,7 @@ ROOTDIR=$(git rev-parse --show-toplevel)
 
 echo $ROOTDIR
 
-if [ ! -e '$ROOTDIR/.tmp/jobdsl' ]
+if [ ! -e $ROOTDIR/.tmp/jobdsl ]
 then
   echo "No jobdsl jar file found. Clone job-dsl-plugin and rebuild it"
   mkdir .tmp
